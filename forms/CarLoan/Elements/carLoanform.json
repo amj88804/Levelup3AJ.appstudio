@@ -19,7 +19,7 @@
   "hidden": "",
   "id": "carLoanform",
   "labelStyle": "text",
-  "left": 116,
+  "left": 120,
   "mAll": "",
   "mBottom": "",
   "mLeft": "",
@@ -42,7 +42,7 @@
   "right": "auto",
   "script": "",
   "style": "",
-  "top": 46,
+  "top": 24,
   "value": "Car Loan ",
   "width": "auto"
 }
