@@ -52,7 +52,34 @@
         "forms",
         "CarLoan",
         "Elements",
-        "btnsubmit.json"
+        "btncarLoan.json"
+      ]
+    },
+    {
+      "!type": "External",
+      "file": [
+        "forms",
+        "CarLoan",
+        "Elements",
+        "btnHomeLoan.json"
+      ]
+    },
+    {
+      "!type": "External",
+      "file": [
+        "forms",
+        "CarLoan",
+        "Elements",
+        "inptNumberYears.json"
+      ]
+    },
+    {
+      "!type": "External",
+      "file": [
+        "forms",
+        "CarLoan",
+        "Elements",
+        "lblmessage.json"
       ]
     }
   ],

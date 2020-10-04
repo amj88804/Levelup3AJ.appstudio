@@ -1,26 +1,61 @@
+function carLoanPayment(carLoanPrinciple2, carLoanMonths2, carLoanInterest2) {
+  let carPaymentFormula = (carLoanPrinciple2 / carLoanMonths2) * ((carLoanInterest2 / 100) + 1)
+  return carPaymentFormula
+}
 
-btnsubmit.onclick=function(){
-  
-//ask user for numbers
-let principle = ""; 
-let interest = "";
-let months = "";
+btncarLoan.onclick=function(){
 
-principle = inptPrinciple.value
-interest = inptMonthlyInterest.value
-months = inptNumberofMonths.value
+let carLoanPrinciple = "" 
+let carLoanInterest = ""
+let carLoanMonths = ""
 
-let p = principle
-let r = interest
-let n =months
+carLoanPrinciple = Number(inptPrinciple.value)
+carLoanInterest= (Number(inptMonthlyInterest.value)) / 100
+console.log(carLoanInterest)
+carLoanMonths= Number(inptNumberofMonths.value)
 
-function carLoanPayment(p, r, n) {
-let monthlyPayment = p * (r*((1+r)**n))/(((1+r)**n)-1)
-return monthlyPayment
-  }
+let carTotal = carLoanPayment (carLoanPrinciple, carLoanMonths, carLoanInterest)
+lblmessage.value =`A car loan for ${carLoanPrinciple} over ${carLoanMonths} months at ${carLoanInterest} interest would have a monthly payment of ${carTotal}`
+}
 
-let monthlyPaymentNumbers = carLoanPayment(price, interest, months)
-let finalPayment = parseInt(monthlyPaymentNumbers)
 
-lblcarLoanformtextContent = 'A car loan for ${p} over ${n} months at ${r) interest would have a monthly payment of ${FinalPayment}`
+//house loan
+
+function homeLoanPayment(homeLoanPrincicple2, homeLoanYears2, homeLoanInterest2) {
+let carPaymentFormula = (homeLoanPrinciple / homeLoanYears * 12) * ((homeInterestInterest / 100) + 1);
+return homePaymentFormula;
+};
+
+btnHomeLoan.onclick=function(){
+
+let homeLoanPrinciple = "" ;
+let homeLoanYears = "";
+let homeLoanInterest = "";
+
+homeLoanPrinciple = inptPrinciple.value
+homeLoanInterest= inptMonthlyInterest.value
+carLoanYears= inptNumberYears.value
+
+
+function homeLoanPayment(homeLoanPrincicple, homeLoanYears, homeLoanInterest) {
+let carPaymentFormula = (homeLoanPrinciple / homeLoanYears * 12) * ((homeInterestInterest / 100) + 1);
+return homePaymentFormula;
+};
+let homeTotal = homeLoanPayment (homeLoanPrinciple, homeLoanYears, homeLoanInterest);
+NSB.MsgBox(`A home loan for ${homeLoanPrinciple} over ${homeLoanYears} years at ${homeLoanInterest} would have a monthly payment of ${homeTotal}`)
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
